@@ -198,8 +198,8 @@ Il valore sta nell'attributo `data-hex` così, anche quando il testo diventa *"C
 Nessuna dipendenza e nessuna build:
 
 ```bash
-git clone <https://github.com/mattecampelli/Color-Scheme-Generator>
-cd color-scheme-generator
+git clone https://github.com/mattecampelli/Color-Scheme-Generator.git
+cd Color-Scheme-Generator
 ```
 
 Poi apri `index.html` nel browser (o usa l'estensione **Live Server** di VS Code).
