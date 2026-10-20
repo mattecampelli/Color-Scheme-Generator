@@ -14,7 +14,7 @@
   <img src="screenshots/mobile.png" alt="Color Scheme Generator su mobile: schema monocromatico a 10 colori" width="22%">
 </p>
 
-🔗 **Live demo:** _(aggiungi qui il link a GitHub Pages / Netlify)_
+🔗 **Live demo:** [text](https://color-scheme-generator-web.netlify.app)
 
 ---
 
