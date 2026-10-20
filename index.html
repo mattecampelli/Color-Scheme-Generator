@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="color-form">
+        <section class="nav-container">
+            <input type="color" value="#F55A5A" name="color">
+            <select class="scheme-selector" name="scheme">
+                <option value="monochrome">Monocromatico</option>
+                <option value="monochrome-dark">Monocromatico Scuro</option>
+                <option value="monochrome-light">Monocromatico Chiaro</option>
+                <option value="analogic">Analogico</option>
+                <option value="complement">Complementare</option>
+                <option value="analogic-complement">Analogico Complementare</option>
+                <option value="triad">Triade</option>
+                <option value="quad">Quad</option>
+            </select>
+            <label for="color-count">Numero di Colori:</label>
+            <input type="number" class="color-count" id="color-count" name="count" value="5" min="1" max="10">
+            <button class="get-color-btn">Ottieni Schema Colori</button>
+        </section>
+    </form>
+    <main class="colors-container" id="colors-container">
+    </main>
+</body>
+</html>

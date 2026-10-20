@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    cursor: pointer;
+}
+
+/* ---------- NAV: mobile first (base = telefono) ---------- */
+
+.nav-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "color scheme"
+        "label count"
+        "button button";
+    gap: 0.75em;
+    align-items: center;
+    background-color: #333;
+    padding: 1em;
+}
+
+/* Stessa altezza e stesso font per tutti i campi della nav */
+input[type="color"],
+.scheme-selector,
+.color-count,
+.get-color-btn {
+    height: 44px;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.scheme-selector,
+.color-count,
+.get-color-btn {
+    padding: 0 0.75em;
+    color: #333;
+    background-color: whitesmoke;
+    border: none;
+}
+
+.scheme-selector {
+    grid-area: scheme;
+}
+
+label {
+    grid-area: label;
+    color: white;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.color-count {
+    grid-area: count;
+    width: 5em;
+}
+
+.get-color-btn {
+    grid-area: button;
+    font-weight: 500;
+}
+
+.get-color-btn:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+    box-shadow: 0 0px 3px white;
+    transition: all 0.3s ease;
+}
+
+input[type="color"] {
+    grid-area: color;
+    width: 60px;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
+/* ---------- PALETTE ---------- */
+
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.single-color-cnt {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 64px;
+}
+
+.single-color-cnt p {
+    font-size: 0.75rem;
+    padding: 0.75em 0;
+    text-align: center;
+}
+
+.color-box {
+    flex: 1;
+}
+
+/* ---------- TABLET: da 600px in su → nav su una riga ---------- */
+
+@media (min-width: 600px) {
+    .nav-container {
+        grid-template-columns: auto 1fr auto auto auto;
+        grid-template-areas: "color scheme label count button";
+        gap: 1em;
+        padding: 1.25em 1.5em;
+    }
+
+    .get-color-btn {
+        font-size: 0.9rem;
+    }
+
+    .single-color-cnt p {
+        font-size: 0.9rem;
+        padding: 1em 0;
+    }
+}
+
+/* ---------- DESKTOP: da 1024px in su → solo ritocchi ---------- */
+
+@media (min-width: 1024px) {
+    .nav-container {
+        padding: 1.25em 2em;
+    }
+
+    .single-color-cnt p {
+        font-size: 1rem;
+    }
+}
