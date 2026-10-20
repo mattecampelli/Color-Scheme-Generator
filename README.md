@@ -14,7 +14,7 @@
   <img src="screenshots/mobile.png" alt="Color Scheme Generator su mobile: schema monocromatico a 10 colori" width="22%">
 </p>
 
-🔗 **Live demo:** [text](https://color-scheme-generator-web.netlify.app)
+🔗 **Live demo:** [Color Scheme Generator](https://color-scheme-generator-web.netlify.app)
 
 ---
 
@@ -198,7 +198,7 @@ Il valore sta nell'attributo `data-hex` così, anche quando il testo diventa *"C
 Nessuna dipendenza e nessuna build:
 
 ```bash
-git clone <url-del-repo>
+git clone <https://github.com/mattecampelli/Color-Scheme-Generator>
 cd color-scheme-generator
 ```
 
